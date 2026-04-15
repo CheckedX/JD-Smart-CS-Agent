@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A girl protects the environment and saves the world.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .book-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .book-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .book-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .book-header .character {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .book-content {
+            padding: 40px;
+            min-height: 600px;
+        }
+        
+        .page {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .illustration {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .text-content {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+        }
+        
+        .story-text {
+            font-size: 1.4em;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .key-words {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #1976d2;
+        }
+        
+        .interaction {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #ff9800;
+        }
+        
+        .hint {
+            color: #e65100;
+            font-style: italic;
+        }
+        
+        .quiz-question {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .page-number {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #f5f5f5;
+        }
+        
+        .nav-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .nav-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .page-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            padding: 20px;
+        }
+        
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .dot.active {
+            background: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="book-container">
+        <div class="book-header">
+            <h1>A girl protects the environment and saves the world.</h1>
+            <div class="character">A story about Lila</div>
+        </div>
+        
+        <div class="book-content">
+            
+        <div class="page" id="page-1" style="display: block;">
+            <div class="page-content">
+                <img src="https://coze-coding-project.tos.coze.site/coze_storage_7625931301832458266/image/generate_image_75f40438-8d66-4421-8688-4d9bf02891e7.jpeg?sign=1807097999-023328c6b9-0-53cfb0ad8d1cd75a188b3ae0aee4672ff6384e596264b95b0b4c1f7d48f89d5e" alt="Page 1 illustration" class="illustration">
+                <div class="text-content">
+                    <p class="story-text">Twelve-year-old Lila, who has always loved exploring the lush forest near her small town, noticed a terrible change on her weekend visit. Where bright wildflowers once bloomed and clear streams gurgled, she now saw piles of discarded trash under wilted yellowing trees, rough stumps where tall oaks used to stand, and murky, smelly water when she cupped her hands in the stream.</p>
+                    <div class="key-words">
+                        <strong>Key Words:</strong> environment, pollution
+                    </div>
+                    
+            <div class="interaction click-interaction" onclick="Click on the different parts of the forest to reveal how each area (stream, trees, ground) has changed from its original healthy state.">
+                <span class="hint">Tap the stream, tree stumps, and litter to see what the forest looked like before it was damaged!</span>
+            </div>
+            
+                </div>
+            </div>
+            <div class="page-number">1 / 4</div>
+        </div>
+        
+        <div class="page" id="page-2" style="display: none;">
+            <div class="page-content">
+                <img src="https://coze-coding-project.tos.coze.site/coze_storage_7625931301832458266/image/generate_image_d10cd99c-0871-44d2-b1c0-5aab1f370401.jpeg?sign=1807098011-7178c1b60c-0-c5be5d8b9a6895bc9853f18bcce1435d8df5021f9aa0af28951955cb6e24f245" alt="Page 2 illustration" class="illustration">
+                <div class="text-content">
+                    <p class="story-text">Lila hurried to tell her neighbors the forest was sick, but they just waved her away, saying kids shouldn't meddle and trash there didn't affect their lives. Soon the town's tap water smelled strange, and the teacher explained the forest damage had polluted the water source. Lila made up her mind she would save the forest all by herself if no one would help.</p>
+                    <div class="key-words">
+                        <strong>Key Words:</strong> pollute, determined
+                    </div>
+                    
+            <div class="interaction quiz-interaction">
+                <p class="quiz-question">Choose the best response when people don't believe you about something important: A) Give up right away B) Try to find proof to show them C) Argue with them loudly</p>
+                <span class="hint">Think about what Lila would do to protect the forest she loves!</span>
+            </div>
+            
+                </div>
+            </div>
+            <div class="page-number">2 / 4</div>
+        </div>
+        
+        <div class="page" id="page-3" style="display: none;">
+            <div class="page-content">
+                <img src="https://coze-coding-project.tos.coze.site/coze_storage_7625931301832458266/image/generate_image_66aecfea-6730-4eda-99da-e4db9937dbff.jpeg?sign=1807098028-1730c523d2-0-53d442fe06446e1458b8f77ccb41fb381216cb14efc7ee9bf2d658dd5ee01c4c" alt="Page 3 illustration" class="illustration">
+                <div class="text-content">
+                    <p class="story-text">With her careful comparison drawings of the old healthy forest and the current damaged one, plus a clear environmental protection plan, Lila bravely handed her work to the community office. She then found her classmates, held up her hand-drawn posters, and explained that picking up trash and planting new saplings would bring the forest back. Soon, several children decided to join her action team.</p>
+                    <div class="key-words">
+                        <strong>Key Words:</strong> environmental protection, action team
+                    </div>
+                    
+            <div class="interaction drag-interaction">
+                <span class="hint">Can you help Lila fix the damaged forest by putting the trash away and planting new trees? See how beautiful the forest can be again!</span>
+            </div>
+            
+                </div>
+            </div>
+            <div class="page-number">3 / 4</div>
+        </div>
+        
+        </div>
+        
+        <div class="page-indicator">
+            <div class="dot active" onclick="goToPage(1)"></div><div class="dot " onclick="goToPage(2)"></div><div class="dot " onclick="goToPage(3)"></div>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-btn" id="prev-btn" onclick="prevPage()" disabled>Previous</button>
+            <button class="nav-btn" id="next-btn" onclick="nextPage()">Next</button>
+        </div>
+    </div>
+    
+    <script>
+        let currentPage = 1;
+        const totalPages = 4;
+        
+        function showPage(pageNum) {
+            // Hide all pages
+            for (let i = 1; i <= totalPages; i++) {
+                document.getElementById('page-' + i).style.display = 'none';
+            }
+            // Show current page
+            document.getElementById('page-' + pageNum).style.display = 'block';
+            
+            // Update buttons
+            document.getElementById('prev-btn').disabled = (pageNum === 1);
+            document.getElementById('next-btn').disabled = (pageNum === totalPages);
+            
+            // Update dots
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === pageNum - 1);
+            });
+            
+            currentPage = pageNum;
+        }
+        
+        function nextPage() {
+            if (currentPage < totalPages) {
+                showPage(currentPage + 1);
+            }
+        }
+        
+        function prevPage() {
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+            }
+        }
+        
+        function goToPage(pageNum) {
+            showPage(pageNum);
+        }
+    </script>
+</body>
+</html>
